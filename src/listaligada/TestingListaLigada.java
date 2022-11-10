@@ -60,33 +60,37 @@ public class TestingListaLigada {
     
         System.out.println(".............................................");
         System.out.println("");
-        System.out.println("Eliminando un elemento del inicio de la lista");
+        System.out.println("Elimicion de elemento inicial de la lista");
         dato = lista.EliminacionInicial();
         System.out.println("El elemento eliminado es: " + dato);
         
-        System.out.println("--------------------------");
-        System.out.println("Eliminando un elemento del final de la lista");
+        System.out.println("..............................................");
+            System.out.println("");
+        System.out.println("Eliminacion de elemento final");
         dato = lista.EliminacionFinal();
         System.out.println("El elemento eliminado es: " + dato);
         
-        System.out.println("---------------------------");
-        System.out.println("Contando los nodos");
-        System.out.println("Cantidad de elementos en mi lista: " + lista.EncontrarNodos());
+        System.out.println("...............................................");
+        System.out.println("");
+        System.out.println("Conteo de nodos");
+        System.out.println("Cantidad de elementos: " + lista.EncontrarNodos());
 
-        System.out.println("----------------------------");
-        System.out.println("Buscando un elemento en la lista");
-        System.out.println("Ingresa el elemento que buscas: ");
+        System.out.println("................................................");
+        System.out.println("");
+        System.out.println("Buscar elemento de lista");
+        System.out.println("Elwmnto a buscar: ");
         entrada = bufer.readLine();
         int a = Integer.parseInt(entrada);
         lista.BuscarElemento(a);
         if(lista.BuscarElemento(a) == true){
-            System.out.println("El elemento " + a + " Si esta en la lista");
+            System.out.println("Elemento " + a + "se encuentra en la lista");
         }else{
-            System.out.println("El elmento " + a + " no se encuentra en la lista");
+            System.out.println("Elmento " + a + " no encontrado en la lista");
         }
 
-        System.out.println("---------------------------");
-        System.out.println("Contenido de la lista");
+        System.out.println("..................................................");
+        System.out.println("");
+        System.out.println("Contenido");
         lista.printList();
         
     }
