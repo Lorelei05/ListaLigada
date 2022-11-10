@@ -36,16 +36,15 @@ public class ListaLigada {
     public void add(int dato) {
         Nodo nuevoNodo = new Nodo(dato);
         this.size++;
-        tail = nuevoNodo;//Se mueve el apuntador al ultimo nodo
         
         if (head == null){//la lista esta vacia, creamos el primer metodo
            head = nuevoNodo;
            actual= head;
+           this.tail = nuevoNodo;
         }
         else{
-        
-        actual.setSiguiente(nuevoNodo);//actual apunta al nuevo nodo
-        actual = nuevoNodo;//Ahora actual es el nuevo nodo
+        tail.setSiguiente(nuevoNodo);
+        tail = nuevoNodo;
         }
     }
     
